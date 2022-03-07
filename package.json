@@ -1,0 +1,11 @@
+{
+  "name": "js-arrays",
+  "version": "1.0.0",
+  "description": "curso de manipulacion de arrays en platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabián Moreno",
+  "license": "ISC"
+}
