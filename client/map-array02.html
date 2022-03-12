@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach Arrays</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        const product = [
+            { title: "hamburguesa", price: 12 },
+            { title: "pizza" , price: 20 }
+        ];
+
+
+        /*creamos una variable app que se relaciona con el (div id = app)
+        que a su vez se relaciona con el id del getElementbyId */
+        const app=document.getElementById("app");
+
+
+        /* creamos un array nuevo (newproduct) que va a contener los elementos de la transformacion de la iteracion con map 
+        del array original y lo que queremos que nos retorne o sea  ("el valor del title" - "el valor del precio") para
+        cada item */
+
+        const newproduct=product.map(item => {
+            return `<li>${item.title} - ${item.price}</li>`;
+        });
+        
+        /*lo que hace join es convertir todo a texto por eso las comillas y de paso
+        relacionamos todos los app y id(app) con newproduct  y le decimos que lo convierta a html
+        de manera que lo envía al div id=app */
+        
+        app.innerHTML=newproduct.join("");
+
+        </script>
+
+    
+</body>
+</html>
